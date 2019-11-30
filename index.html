@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXPENSE MANAGER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <p>EXPENSE <img src="./resources/noun_Money_2157041.png" alt=""> MANAGER </p>
+        <div class="inputPart">
+            <input type="text" placeholder="YOUR INCOME" class="income">
+            <button onclick="addIncome()">ADD</button><br>
+            <select name="expenses" id="expense">
+                <option value="">SELECT</option>
+                <option value="RENT">RENT</option>
+                <option value="CAR-EMI">CAR EMI</option>
+                <option value="ELECTRICITY-BILL">ELECTRICITY BILL</option>
+                <option value="WATER-BILL">WATER BILL</option>
+                <option value="FOOD">FOOD</option>
+                <option value="INSURANCE">INSURANCE</option>
+                <option value="OTHER">OTHER</option>
+            </select>
+            <input type="text" placeholder="MONEY SPENT" class="expenseInput">
+            <button onclick="totalExpense()">ADD</button><br>
+            <button onclick="calculateBalance()">CALCULATE</button><br>
+            <button id="reset">RESET</button><br>
+        </div>
+
+        <div class="displayPart">
+            <div class="head"></div>
+            <div class="totalIncome"></div>
+            <div class="totalExpense"></div>
+            <div class="balance"></div>
+            <div class="warning"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
